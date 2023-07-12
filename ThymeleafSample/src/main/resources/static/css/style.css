@@ -1,0 +1,273 @@
+/* 초기화 코드들 */
+html{overflow-y: scroll;}
+*{margin: 0px; padding: 0px;}
+ul, li{list-style: none;}
+a{text-decoration: none;}
+body{font-family: '맑은 고딕', 'Malgun Gothic', '돋움', Dotum, sans-serif;}
+
+img{border: none;}
+
+.clear:after{content: ''; display: block; clear: both;}
+.cl{clear: both;}
+.fl{float: left;}
+.fl_right{float: right;}
+.mt5{margin-top: 5px;}
+.ml5{margin-left: 5px;}
+.gray_color {color:#8a8f93;}
+.bold{font-weight: bold;}
+.hidden{visibility: hidden;}
+.none{display: none;}
+
+/* 서브2 정의 */
+#wrap{width: 100%; margin: 0 auto; background: transparent;}
+#wrap{min-width: 1420px; margin: 0; padding: 0; background: url(../images/back/common.gif) no-repeat center 0;}
+#header{position: relative; z-index: 100;}
+#header{width: 1420px; margin: 0 auto;}
+
+/* 상단 메뉴부분 영역 지정하기 */
+#mainNav{float: right; width: 900px; height: 40px; background: #ffffff; margin-top: 7px; position: relative; z-index: 1; top: 0; left: 0;}
+	#total_Nav{width: 640px; height: 40px; position: absolute; left: 50%; margin-left: -450px;}
+	#Nav{width: 675px; height: 40px; margin: 0 auto;}
+	#Nav li{float: left; text-align: center; width: 90px;}
+	#Nav li.On_01>a{border-left: 1px solid #eeeeee; box-sizing: border-box; width: 90px;}
+	#Nav > li > a{font-size: 13px; color: #000000; font-weight: bold;}
+	#Nav ul{position: relative; background-color: #ffffff; width: 90px; left: 0; line-height: 40px; height: 100px; display: none; text-align: center;}
+	#Nav ul li{background-color: #ffffff; border-bottom: 1px solid #aaaaaa; padding: 5px 0;}
+	#Nav>li:hover{background: #ffffff;}
+	#Nav>li:hover ul{display: block;}
+	#Nav>li>ul>li:hover{background-color: #e6e6e6;}
+	#Nav>li>ul>li:hover a{color: #000000;}
+
+/* 전체 메뉴 보기 버튼 만들기 */
+.total_btn a{position: absolute; bottom: 17px; left: 515px; height: 35px; width: 158px;}
+	.total_btn img{margin-top: 19px;}
+	.total_menu{width: 550px; height: 415px; background: #ffffff; position: relative; top: 47px; left: 0%; display: none;}
+	.total_menu_inner{width: 550px; height: 415px; background: #ffffff; position: absolute; top: 0px;}
+	.total_menu dl{float: left; margin: 15px 0px;}
+	.total_menu dt{font-size: 0px;}
+	.total_menu dd{border-right: 1px solid #cccccc; width: 90px; height: 400px;}
+	.total_menu li{line-height: 30px; text-align: center; border-bottom: 1px solid #aaaaaa;}
+	.total_close{position: absolute; bottom: 15px; right: 110px;}
+	.total_close a{background: #e4e4e4; display: block;}
+
+/* 상단 영역 지정하기 */
+#header > .top_One{width: 1420px; height: 112px;}
+#header .top_One h1{float: left; padding: 0;}
+.top_Two a.site{display: block; height: 31px; margin-left: -11px; margin-top: 3px;}
+#header .top_list{float: right;}
+#header .top_Two .top_list li{float: left; position: relative; padding: 10px; word-spacing: -1px;}
+.top_Two .top_list{position: absolute; height: 31px; top: 32px; right: 212px; color: #000000; text-align: left; font-size: 16px;}
+.woori{padding: 5px 28px 0;}
+.top_Two .woori img{width: 36px; height: 37px;}
+.top_Two .site img{width: 125px; height: 40px;}
+
+#header .list_style{float: left; height: 31px; margin: 2px 0 0 16px; padding: 5px 0 0 7px;}
+
+.search{background: transparent; border-bottom: 1px solid #aaaaaa; z-index: 10;}
+.search{position: absolute; top: 0px; right: 12px; width: 190px; height: 30px; overflow: hidden;}
+.search .text{width: 145px; right: 45px; top: 0px; position: absolute;}
+.search input{background: transparent; border: none; color: #777777; font-size: 19px;}
+.search .submit{position: absolute; right: 24px; bottom: 10px;}
+
+#header .top_Two{position: relative; width: 1420px; margin: 0 auto; height: 45px; padding-top: 32px; z-index: 11;}
+
+dd{float: left;}
+
+/* 상단 밑단 영역 지정하기 */
+.login_images_bag{background: #676767; color: #ffffff; padding: 7px 21px; border-radius: 3px; margin-right: 10px;}
+.in_images_bag{background: #ffffff; color: #000000; padding: 7px 21px; border-radius: 0; margin-right: 10px;}
+.title_area h2.fl{margin-left: 78px; height: 90px; font-weight: bold; font-size: 45px; line-height: normal; letter-spacing: -1px; color: #000000; margin-bottom: 8px;}
+.title_area h2{margin-top: 33px;}
+
+/* 키워드바 영역 지정하기 */
+#main{width: 1420px; margin: 0 auto;}
+#main .midd_search_box{border-radius: 3px;}
+#main .midd_search_box{width: 700px; height: 50px; background: #0097e6; margin: 30px auto 0;}
+#main .midd_search_box .midd_search_option{width: 140px; padding-left: 15px; height: 40px; background: #ffffff; font-weight: normal; color: #333333; border: 1px solid #0088cf; border-right: none; vertical-align: top; margin: 12px 0 0 14px; top: 5px; left: -6px; position: relative; font-size: 18px; letter-spacing: 0; display: block; z-index: 1;}
+#main .midd_search_box .midd_search_option h2{font-size: 18px; font-weight: normal; line-height: 45px; color: #000000;}
+#main .midd_search_box .midd_search_option a{position: absolute; right: 0px; top: 0px; width: 170px; height: 45px; background: url(../images/btn_search_more_line.gif) no-repeat 152px 15px;}
+
+#main .search_word{height: 40px; width: 435px; line-height: 40px; border: 1px solid #0088cf; border-left: none; background: #ffffff; vertical-align: top; bottom:36px; left:160px; position: relative; display: block; z-index: 2; margin-top:-1px;}
+#main .search_word input{font-size: 18px; border: none; margin: 0 0 0 13px; padding: 0; width: 385px;}
+#main .search_word img{position: absolute; right: 3px; top: 15px; width: 10px; height: 10px;}
+#main .midd_search_box input[type="submit"]{width: 75px; height: 40px; margin: -73px 0 0 597px; background: url(../images/icon_search.gif) no-repeat 17px 10px; padding: 0; border: none; vertical-align: top; color: #ffffff; font-weight: bold; font-size: 0; line-height: 0; text-shadow: 0 1px #006296; cursor: pointer;}
+
+#main .search_recommend{width: 700px; margin: 12px auto 0;}
+.search_recommend span.title{color: #0078d4; font-size: 16px; font-weight: bold; height: 19px; line-height: 19px; padding-right: 8px; background: url(../images/recommend_seperator.gif) no-repeat right 5px; margin-right: 4px;}
+.search_recommend span#kiwed{font-size: 14px;}
+.search_recommend .fl_right{font-size: 14px;}
+.search_recommend .fl_right input[type="checkbox"]{width: 20px; height: 16px; vertical-align: middle; line-height: 27px;}
+.search_recommend .fl_right label{font-size: 14px; margin-left: 4px;}
+.search_recommend .fl_right img{position: relative; display: inline; margin-left: 10px; z-index: 1;}
+
+/* 게시판 목록 영역 지정하기 */
+.tab_list{border-radius: 4px; overflow: hidden; position: relative; margin-top: 30px;}
+.tab_list .text_deco{height: 71px;}
+.tab_list ul li{width: 137px; height: 34px;}
+.tab_list ul{width: 100%; min-height: 40px;}
+.tab_list ul li{margin-right: -2px; border: 1px solid #cbcbcb; text-align: center; background: url(../images/bg_tab1.gif) repeat-x; padding: 0 10px; min-width: 80px;}
+.tab_list ul li.on{background-position: 0 -100px; border-top: 1px solid #01a0f1; border-bottom: 1px solid #01a0f1;}
+.tab_list ul li.on a{color: #ffffff; background: url(../images/img_tab1_arrow.gif) no-repeat left center; padding-left: 17px; padding-right: 17px;}
+.tab_list ul li a{display: block; font-size: 14px; line-height: 18px; color: #000000; letter-spacing: -0.75px; font-weight: bold; padding: 9px 0 8px; vertical-align: middle;}
+.tab_list ul li a{padding-top: 10px; padding-bottom: 10px;}
+
+.text_result{border-bottom: 1px solid #e7e7e7; position: relative; padding: 15px 0 22px 0; margin-bottom: 85px;}
+.text_result h3{font-size: 22px; color: #006699; line-height: 20px; height: 20px; margin-bottom: 30px;}
+.text_result h3 span{font-size: 17px; font-weight: bold; color: #333333; letter-spacing: 0; background: none;}
+
+.text_result .writing_tool{position: absolute; right: 0; top: 21px; padding-right: 17px; color: #cbcbcb;}
+.text_result .writing_tool a{color: #666666;}
+.text_result .writing_tool.on{color: 0078d4;}
+.btn_tool_pack.Pack01.on{background-position: left -391px;}
+.btn_tool_pack.Pack01{background: url(../images/common.gif) no-repeat left -370px;}
+.btn_tool_pack.Pack01, .btn_tool_pack.Pack01 *{height: 21px; line-height: 22px; color: #333333; font-size: 16px; letter-spacing: -1px; vertical-align: middle;}
+.btn_tool_pack.Pack01.on *{background-position: right -391px; color: #0078d4;}
+.btn_tool_pack.Pack01 a{min-width: 36px;}
+.btn_tool_pack.Pack01 *{padding: 4px 28px 0 7px; background: url(../images/common.gif) no-repeat right -370px;}
+
+/* Ajax로 자주하는질문 게시판 꾸미기 */
+/* board 영역 */
+#board{width: 1420px;}
+#board>li{font-size: 17px; line-height: 60px; border-top: 1px solid #ecf0f1; border-bottom: 1px solid #ecf0f1; text-align: center;}
+#board>.active_category{background-color: #e6e6e6;}
+
+/* board 제목 줄 (첫 줄) 조정 */
+#board>#board_subject_li{background-color: #f9f9f9; border-top: 2px solid #e6e6e6; font-size:18px; font-weight:bold;}
+#board>.write_li:hover{background-color:#d0e8ff;}
+.board_num {width:5%; border-right: 1px solid #ecf0f1;}
+.board_title {width:60%;}
+.board_right_box {width:34%;}
+.board_author {width:50%;}
+.board_date {width:50%;}
+
+/* 글 리스트 조정 */
+#board>.write_li:hover{background-color:#edf3fb;}
+.write_list_title {display: block; text-align: left; width:60%; overflow:hidden; white-space:nowrap; text-overflow:ellipsis;}
+.write_list_right_box{width: 34%;}
+.write_list_author {width:50%; text-align: center; overflow:hidden; white-space:nowrap; text-overflow:ellipsis;}
+.title_category {display: block; font-weight: bold; text-align:center; border-radius:2px;}
+.reply_arrow {width: 25px; vertical-align:middle;}
+
+/* 글 열기 조정 */
+.write_content {text-align: justify; padding: 16px; clear: both; overflow: hidden;}
+.write_content:hover{cursor: pointer;}
+.board_list>.write_li:hover .write_content{background-color:#eff6ff;}
+.write_content_title {width: 1348px; color: #fdfdfd; background-color: #e6e6e6; font-size: 17px; padding: 10px 20px; line-height: 26px; font-weight: bold; position: relative; border-radius: 2px 2px 0 0;}
+
+.write_content_title:after {content:""; position:absolute; top:-10px; left:260px;
+border-bottom: 10px solid #e6e6e6;
+border-left: 10px solid transparent;
+border-right: 10px solid transparent;}
+.write_content_text{width:1346px; font-size:16px; padding: 10px 20px; line-height: 24px; border: 1px solid #cbcdcc; border-width: 0 1px 1px; border-radius: 0 0 2px 2px;}
+
+/* 글 페이지 번호 조정 */
+.text_result .page_number {margin-top: 20px;}
+.text_result .page_number_inner {width: 389px; margin:0 auto;}
+.text_result .page_number_inner>li{display: block; float: left;}
+.page_number_inner>li>a{display: block; font-size: 17px; line-height: 30px; float:left; text-align: center; margin: 0 4px; width: 30px; height: 30px; border-radius:1px;}
+.current_page{display: block; width: 26px; height: 26px; line-height: 26px; padding: 0; color: #ffffff; text-align: center; vertical-align: middle; background: url(../images/common_on.gif) no-repeat;}
+.double_lt{width: 28px; height: 30px; background:url(../images/common_prevend.png);}
+.lt{width: 28px; height: 30px; background: url(../images/common_prev.png);}
+.gt{width: 28px; height: 30px; background: url(../images/common_nextend.png);}
+.double_gt{width: 28px; height: 30px; background:url(../images/common_next.png);}
+.margin_right{margin-right: 5px;}
+
+/* 푸터 부분 */
+#footer{border-top: 2px solid #d4d4d4;}
+#footer{width: 100%; background: url(../images/img_footBg.png) repeat-x; box-shadow: none;}
+#footer{clear: both; width: 1420px; margin: 0 auto;}
+#footer #All_Setting_Foot{border-top: 0 none; background: none;}
+#All_Setting_Foot .content{padding-top: 0; padding-bottom: 75px; float: none; width: 100%; border-left: 0 none;}
+#footer .footer_content{width: 1420px; margin: 0 auto;}
+#footer .footer_content:after{display: block; clear: both; content: " ";}
+#footer .link_setting .Bottom_Menu_hover{display: inline;}
+#footer{width: 100%; margin: 0 auto; border-top: 2px solid #d4d4d4; text-align: center; background: url(../images/img_footBg.png) repeat-x; box-shadow: none;}
+
+#All_Setting_Foot .footer_link_setting .link_setting{width: 100%; top: 12px; height: auto;}
+#All_Setting_Foot .footer_link_setting .link_setting .More_setting{width: 100%; position: relative; float: left;}
+#All_Setting_Foot .footer_link_setting .link_setting .snn{position: absolute; left: 168px; top: 9px;}
+#All_Setting_Foot .footer_link_setting .link_setting .snn .Bottom_Menu_Settings_trigger{width: 122px; border-right: 1px solid #dddddd; padding-right: 90px; background-position: 132px center;}
+#All_Setting_Foot .footer_link_setting .link_setting .More_setting .Bottom_Menu_Settings_trigger{display: block; background-image: url(../images/icon_more.png); background-repeat: no-repeat;}
+
+#All_Setting_Foot .footer_link_setting .link_setting .ser{right: auto; left: 386px; top: 10px; position: absolute}
+#All_Setting_Foot .footer_link_setting .link_setting .ser .Bottom_Menu_Settings_trigger{width: 80px; border-right: 1px solid #dddddd; padding-right: 92px; background-position: 92px center;}
+
+#All_Setting_Foot .footer_link_setting .link_setting .language{right: auto; left: 556px; top: 8px; position: absolute;}
+#All_Setting_Foot .footer_link_setting .link_setting .language .Bottom_Menu_Settings_trigger{width: 100px; border-right: 1px solid #dddddd; padding-right: 96px; background-position: 102px center;}
+
+#All_Setting_Foot .footer_link_setting .link_setting .family{top: 9px; right: auto; left: 754px; position: absolute;}
+#All_Setting_Foot .footer_link_setting .link_setting .family .Bottom_Menu_Settings_trigger{width: 105px; padding-right: 100px; background-position: 112px center;}
+
+/* 기타 홈페이지들 속성들 */
+#All_Setting_Foot .footer_link_setting{position: relative; width: 1420px; height: 40px;}
+#All_Setting_Foot .footer_link_setting .sns_link_setting{position: absolute; right: 70px; top: 10px; width: 200px; height: 25px;}
+#All_Setting_Foot .footer_link_setting .sns_link_setting .facebook{position: absolute; right: 173px; top: 0;}
+#All_Setting_Foot .footer_link_setting .sns_link_setting .instagram{position: absolute; right: 130px; top: 0;}
+#All_Setting_Foot .footer_link_setting .sns_link_setting .post_naver{position: absolute; right: 87px; top: 0;}
+#All_Setting_Foot .footer_link_setting .sns_link_setting .youtube{position: absolute; right: 44px; top: 0;}
+#All_Setting_Foot .footer_link_setting .sns_link_setting .navertv{position: absolute; right: 0px;; top: 0;}
+
+/* 푸터 메뉴들 속성들 */
+#All_Setting_Foot .Bottom_logo{margin-top: 10px;}
+#footer .Bottom_logo{float: left; width: 130px; height: 30px;}
+#footer .Bottom_logo img{padding: 50px 0 0 49px;}
+
+#All_Setting_Foot .Sort_menu{border-left: 0 none; position: relative;}
+#All_Setting_Foot .Sort_menu{width: 1420px;}
+#All_Setting_Foot .Sort_menu .menu_info{text-align: left;}
+#footer .content .menu_info{float: left;}
+#footer .content .menu_info .menu_quick{margin-top: 25px;}
+#footer .content .menu_info .menu_quick a{color: #7f7f7f; line-height: 20px; font-size: 16px;}
+#footer .content .menu_info .menu_quick a:hover{color: #000000;}
+#footer .content .menu_info .copyright{color: #7f7f7f; font-family: Arial; font-size: 15px;}
+#All_Setting_Foot .Sort_menu .menu_info .menu_quick{color: #666666; font-size: 17px; letter-spacing: 0;}
+#All_Setting_Foot .Sort_menu .menu_info .copyright{margin-top: 18px;}
+#All_Setting_Foot .Sort_menu{border-left: 0 none; position: relative;}
+#All_Setting_Foot .Sort_menu{width: 1170px;}
+#All_Setting_Foot .Sort_menu{float: left; padding-left: 35px; margin-top: 25px;}
+#All_Setting_Foot{border-top: 1px solid #e6e6e6; background: url(../images/bg.jpg) no-repeat center 0;}
+
+.footer_bottom_setting .Shortmark_Settings .Junior_Corn{position: absolute; top: 18px;}
+.footer_bottom_setting .Shortmark_Settings .Junior_Corn_1{right: 28px;}
+.footer_bottom_setting .Shortmark_Settings .Junior_Corn_2{right: 100px;}
+.footer_bottom_setting .Shortmark_Settings .Junior_Corn_3{right: 70px;}
+
+/* 툴팁 지정하기 */
+.title_tool_tip{background-color: #fdfdfd; color: #333333; padding: 0px 8px; position:absolute; z-index:1000; border:1px solid #d8d8d8; border-radius:3px; font-size:15px; line-height:32px; height:32px; white-space:nowrap; overflow:hidden; display:none;}
+.title_tool_tip:after{content: ""; display: block; float: left; background: url(../images/woori_s.png) no-repeat center center; width: 20px; height: 20px; margin-top: 6px; margin-right: 5px;}
+
+/* 다크모드 버튼 */
+#top_btn{position: fixed; bottom: 100px; left: -20px; width: 100%; z-index:999;}
+#top_btn #dark_btn{width: 1420px; margin: 0 auto; position: relative;}
+#dark_btn button{display: block; position: absolute; right: 1420px; margin: 15px 0; width: 45px; height: 45px; background: #feffff; border-radius: 45px; box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3); outline: none;}
+#dark_btn #darkmode_btn{top: -60px;}
+#dark_btn #darkmode_btn img{width: 100%;}
+.sound_only{display: none;}
+body.dark-mode{background-color: #333333; color: #ffffff; z-index: 2000;}
+
+/* 푸터부분 다크모드 영역지정 */
+body.dark-mode #footer,
+body.dark-mode .content,
+body.dark-mode .menu_quick a,
+body.dark-mode .menu_info p {background-color: #333; color: #fff;}
+
+/* 상단 메뉴부분 다크모드 영역지정 */
+body.dark-mode #mainNav,
+body.dark-mode #Nav li a,
+body.dark-mode .subNav1 li a,
+body.dark-mode .subNav2 li a,
+body.dark-mode .subNav3 li a,
+body.dark-mode .subNav4 li a,
+body.dark-mode .subNav5 li a {background-color: #333; color: #fff;}
+
+/* 메뉴 전체보기 다크모드 영역지정 */
+body.dark-mode .total_menu,
+body.dark-mode .total_menu_inner,
+body.dark-mode .total_menu_inner dl dt,
+body.dark-mode .total_menu_inner dl dd ul li a {background-color: #333; color: #fff;}
+
+/* main 부분 전체 다크모드 영역지정 */
+body.dark-mode #main,
+body.dark-mode #header,
+body.dark-mode #wrap,
+body.dark-mode .tab_list ul li{background-color: #333; color: #fff;}
