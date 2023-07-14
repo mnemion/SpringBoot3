@@ -41,4 +41,19 @@ public class PathVariableController {
         return "submit/c";
     }
 
+    @PostMapping(value = "home", params = "h1")
+    public String ShowhomeA(){
+        return "submit/h1";
+    }
+
+    @PostMapping(value = "home", params = "h2")
+    public String ShowhomeB(){
+        return "submit/h2";
+    }
+
+    @PostMapping(value = "home", params = "h3")
+    public String ShowhomeC(){
+        return "submit/h3";
+    }
+
 }
