@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Thymeleaf Sample</title>
+</head>
+<body>
+<!--  01번 직접 문자를 삽입-->
+<!--    <h1 th:text="'hello world'">표시하는 부분</h1>-->
+
+<!--    02번 인라인 처리-->
+<!--    <h1>안녕하세요! [[${name}]]씨</h1>-->
+
+<!--    03번 값 결합-->
+<!--    <h1 th:text="'오늘의 날씨는 ' + '맑음' + '입니다'">표시하는 부분</h1>-->
+
+    .으로 접근:<span th:text="${mb.id}">ID</span> - <span th:text="${mb.name}">이름</span><br>
+    []로 접근:<span th:text="${mb['id']}">ID</span> - <span th:text="${mb['name']}">이름</span><br>
+
+    <th:block th:object="${mb}">
+        {}으로 접근:<span th:text="*{id}">ID</span> - <span th:text="*{name}">이름</span><br>
+        []로 접근:<span th:text="*{['id']}">ID</span> - <span th:text="*{['name']}">이름</span><br>
+    </th:block>
+
+<!--    List 부분-->
+    <span th:text="${list[0]}">방위</span>
+    <span th:text="${list[1]}">방위</span>
+    <span th:text="${list[2]}">방위</span>
+    <span th:text="${list[3]}">방위</span>
+
+<!--Map 부분-->
+    .으로 접근:<span th:text="${map.hong.name}">이름 1</span>
+    <span th:text="${map.lee.name}">이름 2</span>
+    []으로 접근:<span th:text="${map['hong']['name']}">이름 1</span>
+    <span th:text="${map['lee']['name']}">이름 2</span>
+
+<!--    반복-->
+    <div th:each="member : ${members}">
+        <p>[[${member.id}]] : [[${member.name}]]</p>
+    </div>
+
+    <div th:each="member, s : ${members}" th:object="${member}">
+        <p>
+            index-> [[${s.index}]], count-> [[${s.count}]],
+            size-> [[${s.size}]], current-> [[${s.current}]],
+            even-> [[${s.even}]], odd-> [[${s.odd}]],
+            first-> [[${s.first}]], last-> [[${s.last}]],
+            [[*{id}]] : [[*{name}]]
+        </p>
+    </div>
+
+    <div th:with="today=${#dates.createNow()}">
+        yyyy/mm/dd 형식:<span th:text="${#dates.format(today, 'yyyy/MM/dd')}"></span><br>
+        yyyy년 mm월 dd일 형식:<span th:text="${#dates.format(today, 'yyyy년 MM월 dd일')}"></span><br>
+        yyyy년:<span th:text="${#dates.year(today)}"></span><br>
+        mm월:<span th:text="${#dates.month(today)}"></span><br>
+        dd일:<span th:text="${#dates.day(today)}"></span><br>
+        요일:<span th:text="${#dates.dayOfWeek(today)}"></span><br>
+    </div>
+</body>
+</html>

@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<link rel="stylesheet" href="/css/style.css"/>
+<link rel="stylesheet" href="/css/jquery-ui.min.css"/>
+<link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico"/>
+<script src="/js/html5div.js"></script>
+<script src="/js/html5shiv.js"></script>
+<script src="/js/jquery-1.12.4.min.js"></script>
+<script src="/js/jquery-ui.min.js"></script>
+<script src="/js/script.js"></script>
+<script src="/js/akax.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <title>베이스: 레이아웃</title>
+</head>
+<body>
+<div id="wrap">
+    <header id="header">
+        <div class="top_One">
+            <div class="top_Two">
+                <a class="woori fl" href="/index.html" title="우리은행"><img src="/images/woori_s.png" alt="우리은행 마크"/></a>
+
+                <h1>
+                    <a class="site" href="/index.html" title="우리은행"><img src="/images/woori_s_main.png" alt="우리은행"/></a>
+                </h1>
+
+                <dl class="list_style">
+                    <dt class="none">로그인</dt>
+                    <dd class="login_/images_bag" title="로그인"><a href="../index.html">로그인</a></dd>
+                    <dt class="none">인증센터</dt>
+                    <dd class="in_/images_bag" title="인증센터"><a href="../index.html">인증센터</a></dd>
+                </dl>
+                <div id="mainNav" class="clear">
+                    <div id="total_Nav">
+                        <ul id="Nav">
+                            <li class="sub1 clear On_01"><a href="../index.html" title="개인">개인</a>
+                                <ul class="subNav1">
+                                    <li><a href="sub1/sub1.html" title="개인뱅킹">개인뱅킹</a></li>
+                                    <li><a href="sub1/sub1.html" title="조회">조회</a></li>
+                                    <li><a href="sub1/sub1.html" title="이체">이체</a></li>
+                                    <li><a href="sub1/sub1.html" title="오픈뱅킹">오픈뱅킹</a></li>
+                                    <li><a href="sub1/sub1.html" title="공과금">공과금</a></li>
+                                    <li><a href="sub1/sub1.html" title="예금/신탁">예금/신탁</a></li>
+                                    <li><a href="sub1/sub1.html" title="펀드">펀드</a></li>
+                                    <li><a href="sub1/sub1.html" title="보험">보험</a></li>
+                                    <li><a href="sub1/sub1.html" title="대출">대출</a></li>
+                                    <li><a href="sub1/sub1.html" title="외환/골드">외환/골드</a></li>
+                                    <li><a href="sub1/sub1.html" title="퇴직연금">퇴직연금</a></li>
+                                    <li><a href="sub1/sub1.html" title="뱅킹관리">뱅킹관리</a></li>
+                                    <li><a href="sub1/sub1.html" title="ISA">ISA</a></li>
+                                </ul>
+                            </li>
+                            <li class="sub2 clear"><a href="sub2/sub2.html" title="기업">기업</a>
+                                <ul class="subNav2">
+                                    <li><a href="sub2/sub2.html" title="기업뱅킹">기업뱅킹</a></li>
+                                    <li><a href="sub2/sub2.html" title="조회">조회</a></li>
+                                    <li><a href="sub2/sub2.html" title="이체">이체</a></li>
+                                    <li><a href="sub2/sub2.html" title="공과금">공과금</a></li>
+                                    <li><a href="sub2/sub2.html" title="전자결제">전자결제</a></li>
+                                    <li><a href="sub2/sub2.html" title="수표어음">수표어음</a></li>
+                                    <li><a href="sub2/sub2.html" title="자금관리">자금관리</a></li>
+                                    <li><a href="sub2/sub2.html" title="예금/신탁">예금/신탁</a></li>
+                                    <li><a href="sub2/sub2.html" title="대출">대출</a></li>
+                                    <li><a href="sub2/sub2.html" title="펀드/보험">펀드/보험</a></li>
+                                    <li><a href="sub2/sub2.html" title="외환">외환</a></li>
+                                    <li><a href="sub2/sub2.html" title="퇴직연금">퇴직연금</a></li>
+                                    <li><a href="sub2/sub2.html" title="뱅킹관리">뱅킹관리</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="clear"><a href="index.html" title="마이데이터">마이데이터</a></li>
+
+                            <li class="sub4 clear"><a href="#" title="자산관리">자산관리</a>
+                                <ul class="subNav4">
+                                    <li><a href="sub3/sub3.html" title="MY자산 진단">MY자산 진단</a></li>
+                                    <li><a href="sub3/sub3.html" title="펀드 포트폴리오">펀드 포트폴리오</a></li>
+                                    <li><a href="sub3/sub3.html" title="퇴직연금 포트폴리오">퇴직연금 포트폴리오</a></li>
+                                    <li><a href="sub3/sub3.html" title="WON챌린지">WON챌린지</a></li>
+                                    <li><a href="sub3/sub3.html" title="미래설계">미래설계</a></li>
+                                </ul>
+                            </li>
+                            <li class="sub5 clear"><a href="#" title="금융상품">금융상품</a>
+                                <ul class="subNav5">
+                                    <li><a href="sub3/sub3.html" title="추천상품">추천상품</a></li>
+                                    <li><a href="sub3/sub3.html" title="예금">예금</a></li>
+                                    <li><a href="sub3/sub3.html" title="펀드">펀드</a></li>
+                                    <li><a href="sub3/sub3.html" title="대출">대출</a></li>
+                                    <li><a href="sub3/sub3.html" title="외환">외환</a></li>
+                                    <li><a href="sub3/sub3.html" title="골드">골드</a></li>
+                                    <li><a href="sub3/sub3.html" title="신탁">신탁</a></li>
+                                    <li><a href="sub3/sub3.html" title="보험">보험</a></li>
+                                    <li><a href="sub3/sub3.html" title="퇴직연금">퇴직연금</a></li>
+                                    <li><a href="sub3/sub3.html" title="ISA">ISA</a></li>
+                                </ul>
+                            </li>
+                            <li class="sub7 clear"><a href="#" title="카드">카드</a>
+                                <ul class="subNav3">
+                                    <li><a href="sub3/sub3.html" title="우리카드">우리카드</a></li>
+                                    <li><a href="sub3/sub3.html" title="롯데카드">롯데카드</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <p class="total_btn">
+                            <a href="#" title="전체메뉴보기"><img src="/images/btn_all_menu.png" alt="total 메뉴 보기"/>전체메뉴 목록보기</a>
+                        </p>
+                    </div>
+                    <div class="total_menu">
+                        <div class="total_menu_inner">
+                            <dl>
+                                <dt>개인</dt>
+                                <dd>
+                                    <ul>
+                                        <li><a href="#" title="개인뱅킹">개인뱅킹</a></li>
+                                        <li><a href="#" title="조회">조회</a></li>
+                                        <li><a href="#" title="이체">이체</a></li>
+                                        <li><a href="#" title="오픈뱅킹">오픈뱅킹</a></li>
+                                        <li><a href="#" title="공과금">공과금</a></li>
+                                        <li><a href="#" title="예금/신탁">예금/신탁</a></li>
+                                        <li><a href="#" title="펀드">펀드</a></li>
+                                        <li><a href="#" title="보험">보험</a></li>
+                                        <li><a href="#" title="대출">대출</a></li>
+                                        <li><a href="#" title="외환/골드">외환/골드</a></li>
+                                        <li><a href="#" title="퇴직연금">퇴직연금</a></li>
+                                        <li><a href="#" title="뱅킹관리">뱅킹관리</a></li>
+                                        <li><a href="#" title="ISA">ISA</a></li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>기업</dt>
+                                <dd>
+                                    <ul>
+                                        <li><a href="#" title="기업뱅킹">기업뱅킹</a></li>
+                                        <li><a href="#" title="조회">조회</a></li>
+                                        <li><a href="#" title="이체">이체</a></li>
+                                        <li><a href="#" title="공과금">공과금</a></li>
+                                        <li><a href="#" title="전자결제">전자결제</a></li>
+                                        <li><a href="#" title="수표어음">수표어음</a></li>
+                                        <li><a href="#" title="자금관리">자금관리</a></li>
+                                        <li><a href="#" title="예금/신탁">예금/신탁</a></li>
+                                        <li><a href="#" title="대출">대출</a></li>
+                                        <li><a href="#" title="펀드/보험">펀드/보험</a></li>
+                                        <li><a href="#" title="외환">외환</a></li>
+                                        <li><a href="#" title="퇴직연금">퇴직연금</a></li>
+                                        <li><a href="#" title="뱅킹관리">뱅킹관리</a></li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>마이데이터</dt>
+                                <dd>
+                                    <ul>
+                                        <li><a href="#" class="none">마이데이터</a></li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>자산관리</dt>
+                                <dd>
+                                    <ul>
+                                        <li><a href="#" title="My자산 진단">MY자산 진단</a></li>
+                                        <li><a href="#" title="펀드 포트폴리오">펀드 포트폴리오</a></li>
+                                        <li><a href="#" title="퇴직연금 포트폴리오">퇴직연금 포트폴리오</a></li>
+                                        <li><a href="#" title="WON챌린지">WON챌린지</a></li>
+                                        <li><a href="#" title="미래설계">미래설계</a></li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>금융상품</dt>
+                                <dd>
+                                    <ul>
+                                        <li><a href="#" title="추천상품">추천상품</a></li>
+                                        <li><a href="#" title="예금">예금</a></li>
+                                        <li><a href="#" title="펀드">펀드</a></li>
+                                        <li><a href="#" title="대출">대출</a></li>
+                                        <li><a href="#" title="외환">외환</a></li>
+                                        <li><a href="#" title="골드">골드</a></li>
+                                        <li><a href="#" title="신탁">신탁</a></li>
+                                        <li><a href="#" title="보험">보험</a></li>
+                                        <li><a href="#" title="퇴직연금">퇴직연금</a></li>
+                                        <li><a href="#" title="ISA">ISA</a></li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>카드</dt>
+                                <dd>
+                                    <ul>
+                                        <li><a href="#" title="우리카드">우리카드</a></li>
+                                        <li><a href="#" title="롯데카드">롯데카드</a></li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="search">
+                        <input class="text" type="text" name="query" title="검색창" value="부동산"/>
+                        <input class="submit" type="image" src="/images/icon_search.png" alt="검색" title="검색창"/>
+                    </div>
+                </div>
+    </header>
+    <section id="main" class="clear">
+        <div class="midd_search_box">
+            <div class="midd_search_option">
+                <span class="none">찾으시는 카테고리</span>
+                <h2>자주하는질문</h2>
+                <a href="#" title="목록" class="search_btm_more"></a>
+            </div>
+            <div class="search_word">
+                <input type="text" id="query" name="query" title="검색어" value="고객"/>
+                <img src="/images/btn_search_more.gif" alt="검색어 선택"/>
+            </div>
+            <input type="submit" value="검색" title="검색창"/>
+        </div>
+        <div class="search_recommend clear">
+            <div class="fl">
+                <span class="title">추천검색어</span>
+                <span id="kiwed">
+						<a href="#">자동이체</a>
+						<a href="#">환전</a>
+						<a href="#">이체한도</a>
+						<a href="#">인증서</a>
+						<a href="#">otp</a>
+					</span>
+            </div>
+            <div class="fl_right">
+                <input type="checkbox" id="search_check_box"/>
+                <label for="search_check_box" title="재검색">결과내 재검색</label>
+                <img src="/images/icon_question.gif" title="도움말" alt="도움말"/>
+            </div>
+        </div>
+        <div class="tab_list cl">
+            <ul class="cl text_deco">
+                <li class="fl">
+                    <a href="#" title="전체">전체(12,154)</a>
+                </li>
+                <li class="fl">
+                    <a href="#" title="메뉴">메뉴(310)</a>
+                </li>
+                <li class="fl on">
+                    <a href="#" title="자주하는질문">자주하는질문(42)</a>
+                </li>
+                <li class="fl">
+                    <a href="#" title="금융상품">금융상품(27)</a>
+                </li>
+                <li class="fl">
+                    <a href="#" title="이벤트">이벤트(1)</a>
+                </li>
+                <li class="fl">
+                    <a href="/sub3/sub3.html" title="게시판">게시판(5,702)</a>
+                </li>
+                <li class="fl">
+                    <a href="#" title="웹페이지">웹페이지(948)</a>
+                </li>
+                <li class="fl">
+                    <a href="#" title="영업점">영업점(0)</a>
+                </li>
+                <li class="fl">
+                    <a href="#" title="서식약관설명서">서식약관설명서(5,124)</a>
+                </li>
+            </ul>
+        </div>
+        <div class="text_result">
+            <h3>
+                자주하는질문
+                <span>(42개)</span>
+            </h3>
+            <span class="writing_tool">
+					<span class="btn_tool_pack Pack01 on"><a href="#">정확도순</a></span>
+					<span class="btn_tool_pack Pack01"><a href="#">제목순</a></span>
+				</span>
+            <ul id="board">
+                <li id="board_subject_li" class="clear">
+                    <div class="board_num fl">번호</div>
+                    <div class="board_question fl">제목</div>
+                    <div class="board_right_box fl_right">
+                        <div class="board_author fl">글쓴이</div>
+                        <div class="board_date fl">등록일</div>
+                    </div>
+                </li>
+                <!-- <!-- ajax 데이터 이용 -->
+            </ul>
+            <div class="page_number clear">
+                <ul class="page_number_inner clear">
+                    <li class="margin_right clear">
+                        <a href="#">
+                            <div class="double_lt"></div>
+                        </a>
+                    </li>
+                    <li class="clear margin_right">
+                        <a href="#">
+                            <div class="lt"></div>
+                        </a>
+                    </li>
+                    <li class="clear">
+                        <a href="#" class="current_page">1</a>
+                    </li>
+                    <li class="clear">
+                        <a href="#">2</a>
+                    </li>
+                    <li class="clear">
+                        <a href="#">3</a>
+                    </li>
+                    <li class="clear">
+                        <a href="#">4</a>
+                    </li>
+                    <li class="clear">
+                        <a href="#">5</a>
+                    </li>
+                    <li class="margin_right clear">
+                        <a href="#"><div class="gt"></div></a>
+                    </li>
+                    <li class="clear">
+                        <a href="#"><div class="double_gt"></div></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <div id="footer">
+
+
+
+
+
+        <div id="All_Setting_Foot">
+            <div class="content">
+                <div class="footer_content">
+
+
+
+                    <div class="footer_link_setting">
+                        <div class="link_setting">
+                            <div class="More_setting">
+                                <dl class="Bottom_Menu_hover snn">
+                                    <dt><a href="#" class="Bottom_Menu_Settings_trigger" title="대표 1588-5000">대표 <strong>1588-5000</strong></a></dt>
+                                    <dd class="hidden">1</dd>
+                                </dl>
+                                <dl class="Bottom_Menu_hover ser">
+                                    <dt><a href="#" class="Bottom_Menu_Settings_trigger" title="기타서비스">기타서비스</a></dt>
+                                    <dd class="hidden">2</dd>
+                                </dl>
+
+                                <dl class="Bottom_Menu_hover language">
+                                    <dt><a href="#" class="Bottom_Menu_Settings_trigger" title="LANGUAGE">LANGUAGE</a></dt>
+                                    <dd class="hidden">3</dd>
+                                </dl>
+
+                                <dl class="Bottom_Menu_hover family">
+                                    <dt><a href="#" class="Bottom_Menu_Settings_trigger" title="패밀리사이트">패밀리사이트</a></dt>
+                                    <dd class="hidden">4</dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="sns_link_setting">
+                            <div class="Junior_Corn facebook"><a href="#" target="_blank" title="페이스북"><img alt="페이스북으로 이동" src="/images/sns_incon/icon_facebook_gray.png"></a></div>
+                            <div class="Junior_Corn instagram"><a href="#" target="_blank" title="인스타그램"><img alt="인스타그램으로 이동" src="/images/sns_incon/icon_instagram_gray.png"></a></div>
+                            <div class="Junior_Corn post_naver"><a href="#" target="_blank" title="네이버 포스트"><img alt="네이버 포스트로 이동" src="/images/sns_incon/icon_post_naver_gray.png"></a></div>
+                            <div class="Junior_Corn youtube"><a href="#" target="_blank" title="유튜브"><img alt="유튜브로 이동" src="/images/sns_incon/icon_youtube_gray.png"></a></div>
+                            <div class="Junior_Corn navertv"><a href="#" target="_blank" title="네이버TV"><img alt="네이버TV로 이동" src="/images/sns_incon/icon_navertv_gray.png"></a></div>
+                        </div>
+                    </div>
+                    <div class="footer_bottom_setting clear">
+
+                        <div class="Bottom_logo Bottom_Menu_hover">
+                            <a href="/index.html" class="Bottom_Menu_Settings_trigger"><img  alt="우리은행 로고" src="/images/icon_woori.gif"/></a>
+                        </div>
+                        <div class="Sort_menu">
+                            <div class="menu_info">
+                                <p class="menu_quick">
+                                    <a href="#" title="은행소개">은행소개</a>&nbsp;&nbsp;|&nbsp;
+                                    <a href="#" title="영업점안내">영업점안내</a>&nbsp;&nbsp;|&nbsp;
+                                    <a href="#" title="고객굉장">고객광장</a>&nbsp;&nbsp;|&nbsp;
+                                    <a href="#" class="bold" title="개인정보처리방침">개인정보처리방침</a>&nbsp;&nbsp;|&nbsp;
+                                    <a href="#" class="bold" title="신용정보활용체제">신용정보활용체제</a>&nbsp;&nbsp;|&nbsp;
+                                    <a href="#" title="개인신용정보관리보호">개인신용정보관리보호 </a><br />
+                                    <a href="#" title="사고신고">사고신고</a>&nbsp;&nbsp;|&nbsp;
+                                    <a href="#" title="전자민원접수">전자민원접수</a>&nbsp;&nbsp;|&nbsp;
+                                    <a href="#" title="보호금융상품등록부">보호금융상품등록부</a>&nbsp;&nbsp;|&nbsp;
+                                    <a href="#" title="상품공시실">상품공시실</a>&nbsp;&nbsp;|&nbsp;
+                                    <a href="#" title="보안센터">보안센터</a>&nbsp;&nbsp;|&nbsp;
+                                    <a href="#" title="웹접근성 이용안내">웹접근성 이용안내</a>
+                                </p>
+                                <p class="copyright">COPYRIGHTS WOORI BANK. ALL RIGHTS RESERVED.</p>
+                            </div>
+                            <div class="Shortmark_Settings">
+                                <div class="Bottom_Menu_hover Junior_Corn Junior_Corn_1">
+                                    <a href="#none" class="Bottom_Menu_Settings_trigger" title="마크1"><img alt="마크1" src="/images/icon_1_new.gif" /></a>
+                                </div>
+                                <div class="Bottom_Menu_hover Junior_Corn Junior_Corn_2">
+                                    <a href="#none" class="Bottom_Menu_Settings_trigger" title="마크2"><img alt="마크2" src="/images/mark_vcss1.gif" /></a>
+                                </div>
+                                <div class="Bottom_Menu_hover Junior_Corn Junior_Corn_3">
+                                    <a href="#none" class="Bottom_Menu_Settings_trigger" title="마크3"><img alt="마크3" src="/images/icon_20201215.png" /></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div id="top_btn">
+    <div id="dark_btn">
+        <button type="button" id="darkmode_btn">
+            <span class="sound_only">다크 모드 보기</span>
+            <img src="/images/01-ON.png" alt="다크 모드 보기"/>
+        </button>
+        <button type="button" id="totop_btn">
+            <span class="sound_only">상단으로</span>
+            <img src="/images/02-OFF.png" alt="상단으로">
+        </button>
+    </div>
+</div>
+</body>
+</html>
