@@ -1,10 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns:th ="http://www.thymeleaf.org">
 <head>
-  <meta charset="UTF-8">
-  <title>c</title>
+    <meta charset="UTF-8">
+  <title>c 화면</title>
 </head>
 <body>
-  <h1>버튼 C 클릭 화면</h1>
+    <h1>버튼 C 클릭 화면</h1>
+    <form th:action="@{/send}" method="post">
+        <input type="submit" value="홈 버튼" name="home">
+    </form>
 </body>
 </html>

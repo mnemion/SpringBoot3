@@ -5,22 +5,22 @@
     <title>입력 화면</title>
 </head>
 <body>
-  <form th:action="@{/confirm}" method="post">
+<form th:action="@{/confirm}" method="post">
     <div>
-      <label for="name">이름:</label>
-      <input type="text" name="name">
+        <label for="name">이름:</label>
+        <input type="text" name="name">
     </div>
     <div>
-      <label for="age">나이:</label>
-      <input type="number" name="age" min="1" max="100">
+        <label for="age">나이:</label>
+        <input type="number" name="age" min="1" max="100">
     </div>
     <div>
-      <label for="birth">생년월일:</label>
-      <input type="date" name="birth">
+        <label for="birth">생년월일:</label>
+        <input type="date" name="birth">
     </div>
     <div>
-      <input type="submit" value="전송">
+        <input type="submit" value="전송">
     </div>
-  </form>
+</form>
 </body>
 </html>

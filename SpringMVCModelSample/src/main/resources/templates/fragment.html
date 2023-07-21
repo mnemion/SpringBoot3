@@ -2,11 +2,15 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>fragment</title>
+    <title>Title</title>
 </head>
 <body>
     <span th:fragment="one">하나</span>
     <span th:fragment="two">둘</span>
     <span th:fragment="three">셋</span>
+
+    <h1>Fragment를 아래에 삽입하기</h1>
+    <div id="one" th:insert="fragment :: one">효과 그대로</div>
+    <div id="three" th:replace="fragment :: three">재배치</div>
 </body>
 </html>

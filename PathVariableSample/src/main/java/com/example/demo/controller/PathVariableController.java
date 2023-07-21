@@ -11,9 +11,9 @@ public class PathVariableController {
     public String showView(){
         return "show";
     }
+
     @GetMapping("/function/{no}")
     public String selectFunction(@PathVariable Integer no){
-        // view 변수를 초기화
         String view = null;
         switch (no){
             case 1:
@@ -28,32 +28,24 @@ public class PathVariableController {
         }
         return view;
     }
+
     @PostMapping(value = "send", params = "a")
     public String showAView(){
         return "submit/a";
     }
+
     @PostMapping(value = "send", params = "b")
     public String showBView(){
         return "submit/b";
     }
+
     @PostMapping(value = "send", params = "c")
     public String showCView(){
         return "submit/c";
     }
 
-    @PostMapping(value = "home", params = "h1")
-    public String ShowhomeA(){
-        return "submit/h1";
+    @PostMapping(value = "send", params = "home")
+    public String showHomeView() {
+        return "show";
     }
-
-    @PostMapping(value = "home", params = "h2")
-    public String ShowhomeB(){
-        return "submit/h2";
-    }
-
-    @PostMapping(value = "home", params = "h3")
-    public String ShowhomeC(){
-        return "submit/h3";
-    }
-
 }
